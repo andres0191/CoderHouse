@@ -18,14 +18,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: -3%;
-    margin-bottom: -3%;
+    /* margin-top: -3%;
+    margin-bottom: -3%; */
 }
 
 .logo{
     width: 15%;
     cursor: pointer;
-    margin-top: 50px;
+   /*  margin-top: 50px; */
 }
 
 div ul li{
@@ -52,50 +52,13 @@ ul li a {
     transition: all .3s;
   }
   
-.menu-hover:hover {
+/* .menu-hover:hover {
     border: 3px solid #f44336;
     color: #f44336;
     font-size: 35px;
-  }
+  } */
   
- /* ********menu desplegable*********** */
-
- #menu-options{
-    margin-top: 15px;
- }
-
- #menu-options ul ul {
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0;
-   }
-   
-   /* items del menu desplegable */
-   
-   #menu-options ul ul li {
-    float:none;
-    width:150px;
-    margin: 20px;
-   }
-   
-   /* enlaces de los items del menu desplegable */
-   
-   #menu-options ul ul a {
-    line-height:120%;
-    padding:10px 15px;
-   }
-   
-   /* items del menu desplegable al pasar el ratón */
-   
-   #menu-options ul li:hover > ul {
-    display:block;
-   }
-
-   #menu-options ul li a:hover{
-    border: 1px solid red;
-   }
-
+ 
 /* *********************** */
 
 .container-header img{
@@ -137,7 +100,7 @@ ul li a {
     display: block;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 50px ;
+    /* margin-top: 50px ; */
 }
 
 .item-footer li ul a{
@@ -228,10 +191,10 @@ h1{
     
 }
 
-.contact-form form button:hover,
+/* .contact-form form button:hover,
 .contact-form form button:focus {
     color: #f44336;
-}
+} */
 
 
 
