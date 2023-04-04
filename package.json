@@ -1,0 +1,19 @@
+{
+  "name": "coderhouse",
+  "version": "1.0.0",
+  "description": "in this project we practiced flexbox, grid, css and Bootstrap implementation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andres0191/CoderHouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andres0191/CoderHouse/issues"
+  },
+  "homepage": "https://github.com/andres0191/CoderHouse#readme"
+}
