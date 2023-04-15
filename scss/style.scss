@@ -1,324 +1,114 @@
 @import "./partials/reset";
 @import "./partials/variable";
 
+/* General Styles */
 
-// Menu
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+} 
 
-.logo {
-  width: 35%;
-  cursor: pointer;
-  margin: 5%;
-}
-
-div {
-  ul {
-    li {
-      list-style: none;
-      display: inline-block;
-      position: relative;
-      margin: 15px 0px;
-
-      a {
-        text-decoration: none;
-        font-weight: bold;
-        font-size: $normal;
-        color: $txt-footer;
-
-        &:hover{
-          transition: all 0.3s;
-          border: 1px solid orangered;
-        }
-      }
-    }
-  }
-}
-
-// Options of Footer
-ul {
-  li {
-    a {
-      text-decoration: none;
-      font-family: sans-serif;
-      font-size: $medium;
-      border-radius: 10px;
-      padding: 20px 40px;
-
-      &:hover{
-        transition: all 0.3s;
-        border: 1px solid orangered;
-      }
-    }
-    
-  }
-}
-
-.container-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: center;
-  font-size: $medium;
-
-  img {
-    width: 35%;
-    border-radius: 10px;
-  }
-
-  p {
+.logo{
     width: 30%;
-    padding: 100px;
-  }
 }
 
-// Grid Practice
-
-.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  align-items: center;
-  grid-gap: 20px;
-
-  img {
-    width: 200px;
-    height: auto;
-  }
-}
-
-// Footer
-.container-footer {
-  display: block;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.justify-content-center{
-  margin: 15px 0px;
-}
-
-.item-footer {
-  li {
-    ul {
-      a {
-        text-decoration: none;
-        color: var(--txt-color);
-      }
+/* Hover of principal options in navbar, footer, icons and logo */
+.text-light{
+    &:hover{
+        border: 1px solid red;
+        border-radius: 10px;
+                
     }
+}
+
+.navbar{
+    background-image: url(../img/Fondo/Abstract_Background_02-05.jpg);
+    padding: 0;
+    width: 100%;
+}
+
+/* Invisible texto */
+figcaption {
+    display:none; 
+    transition: all .5s;
   }
-}
-
-// Nosotros
-.menu-container {
-  display: grid;
-  grid-template-columns: repeat(4, 50%);
-  grid-gap: 10px;
-  align-items: center;
-
-  img {
-    width: 20%;
+  /* Visible texto */
+  figure:hover > figcaption {
+    display:block;
+    transition: all .5s;
   }
+
+/* Carousel Adjustment */
+.carousel-item {
+    height: 55vh;
+    background: none;
+
+    img{
+        width: 50%;
+        height: 100%;
+        border-radius: 10px;
+    }
 }
 
-// Alquiler
-.navbar-expand-lg {
-  .navbar-nav {
-    font-size: 30px;
-    font-weight: bold;
-    gap: 100px;
-  }
+h1{
+    color: $txt-footer !important;
+    text-align: center;
+    width: 50vh;
 }
 
-// Formulario Nosotros
-h1 {
-  margin: 10px;
+/* Footer Styles*/
+
+.navbar{
+    li{
+        a{
+            i{
+                margin: 10px;
+            }
+        }
+    }
 }
 
-.contact-wrapper {
-  > * {
-    padding: 2%;
-  }
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
 }
 
-.contact-form {
-  justify-items: center;
-  align-items: center;
+.icons-footer{
+    display: flex;
+}
 
-  form {
+
+/* Grid Practice in page Alquiler, Compra and Venta */
+.grid-section-ventas{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto auto;
     justify-items: center;
     align-items: center;
-    justify-content: center;
-
-    label {
-      margin: 15px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      font-size: 20px;
-    }
-
-    input, select {
-      border: 1px solid red;
-      border-radius: 10px;
-      margin-left: 25px;
-      width: 100%;
-      font-size: 15px;
-    }
-
-    .select_option {
-      margin: 0px 10px;
-    }
-
-    form,
-    p{
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-
-    textarea{
-      border: 1px solid red;
-      border-radius: 10px;
-      margin-left: 15px;
-    }
-
-    form button{
-      color: white;
-      width: 30%;
-      text-transform: uppercase;
-      margin-top: 5%;
-    }
-
-    form button,
-    form input,
-    form textarea {
-      padding: .7em;
-      border: none;
-    }
-  }
+    gap: 50px;
 }
 
-// Section of Ventas and Alquiler
-
-.grid-section-ventas{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-items: center;
-  align-items: center;
-  gap: 50px;
-  margin: 50px 0;
-}
-
-.card:hover{
-  .rubberBand {
-    -webkit-animation-name: rubberBand;
-    animation-name: rubberBand;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    }
-    @-webkit-keyframes rubberBand {
-    0% {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-      }
-    30% {
-      -webkit-transform: scale3d(1.25, 0.75, 1);
-      transform: scale3d(1.25, 0.75, 1);
-      }
-    40% {
-      -webkit-transform: scale3d(0.75, 1.25, 1);
-      transform: scale3d(0.75, 1.25, 1);
-      }
-    50% {
-      -webkit-transform: scale3d(1.15, 0.85, 1);
-      transform: scale3d(1.15, 0.85, 1);
-      }
-    65% {
-      -webkit-transform: scale3d(.95, 1.05, 1);
-      transform: scale3d(.95, 1.05, 1);
-      }
-    75% {
-      -webkit-transform: scale3d(1.05, .95, 1);
-      transform: scale3d(1.05, .95, 1);
-      }
-    100% {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-      }
-    }
-    @keyframes rubberBand {
-    0% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-      }
-    30% {
-      -webkit-transform: scale3d(1.25, 0.75, 1);
-      transform: scale3d(1.25, 0.75, 1);
-      }
-    40% {
-      -webkit-transform: scale3d(0.75, 1.25, 1);
-      transform: scale3d(0.75, 1.25, 1);
-      }
-    50% {
-      -webkit-transform: scale3d(1.15, 0.85, 1);
-      transform: scale3d(1.15, 0.85, 1);
-      }
-    65% {
-      -webkit-transform: scale3d(.95, 1.05, 1);
-      transform: scale3d(.95, 1.05, 1);
-      }
-    75% {
-      -webkit-transform: scale3d(1.05, .95, 1);
-      transform: scale3d(1.05, .95, 1);
-      }
-    100% {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-      }
-    } 
-  }
-
-
-// Responsive Design
-@media(max-width:992px){
-  .grid-section-ventas{
-  display: grid;
-  grid-template-columns: auto auto;
-  }
-  
-  .contact-form form{
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-  }
-}
-
-@media(max-width:576px){
-  .grid-section-ventas{
-  display: grid;
-  grid-template-columns: auto;
-  }
-
-  .gallery-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.grid-home-options{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
     align-items: center;
-    align-content: center;
-    font-size: 40px;
-  }
+    margin: 50px;
 }
 
-// Animation
+.carrusel{
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+    .navbar-toggler{
+        margin: 10px;
+    }
+
+}
+
 

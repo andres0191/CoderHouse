@@ -8,270 +8,99 @@
 
 /* Font-Size */
 /* Colors */
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
 }
 
 .logo {
-  width: 35%;
-  cursor: pointer;
-  margin: 5%;
-}
-
-div ul li {
-  list-style: none;
-  display: inline-block;
-  position: relative;
-  margin: 15px 0px;
-}
-div ul li a {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.7rem;
-  color: rgb(0, 0, 0);
-}
-div ul li a:hover {
-  transition: all 0.3s;
-  border: 1px solid orangered;
-}
-
-ul li a {
-  text-decoration: none;
-  font-family: sans-serif;
-  font-size: 2rem;
-  border-radius: 10px;
-  padding: 20px 40px;
-}
-ul li a:hover {
-  transition: all 0.3s;
-  border: 1px solid orangered;
-}
-
-.container-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: center;
-  font-size: 2rem;
-}
-.container-header img {
-  width: 35%;
-  border-radius: 10px;
-}
-.container-header p {
   width: 30%;
-  padding: 100px;
 }
 
-.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  align-items: center;
-  grid-gap: 20px;
-}
-.gallery-container img {
-  width: 200px;
-  height: auto;
+/* Hover of principal options in navbar, footer, icons and logo */
+.text-light:hover {
+  border: 1px solid red;
+  border-radius: 10px;
 }
 
-.container-footer {
+.navbar {
+  background-image: url(../img/Fondo/Abstract_Background_02-05.jpg);
+  padding: 0;
+  width: 100%;
+}
+
+/* Invisible texto */
+figcaption {
+  display: none;
+  transition: all 0.5s;
+}
+
+/* Visible texto */
+figure:hover > figcaption {
   display: block;
-  flex-direction: row;
-  justify-content: space-around;
+  transition: all 0.5s;
 }
 
-.justify-content-center {
-  margin: 15px 0px;
+/* Carousel Adjustment */
+.carousel-item {
+  height: 55vh;
+  background: none;
 }
-
-.item-footer li ul a {
-  text-decoration: none;
-  color: var(--txt-color);
-}
-
-.menu-container {
-  display: grid;
-  grid-template-columns: repeat(4, 50%);
-  grid-gap: 10px;
-  align-items: center;
-}
-.menu-container img {
-  width: 20%;
-}
-
-.navbar-expand-lg .navbar-nav {
-  font-size: 30px;
-  font-weight: bold;
-  gap: 100px;
+.carousel-item img {
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 h1 {
+  color: rgb(0, 0, 0) !important;
+  text-align: center;
+  width: 50vh;
+}
+
+/* Footer Styles*/
+.navbar li a i {
   margin: 10px;
 }
 
-.contact-wrapper > * {
-  padding: 2%;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
-.contact-form {
-  justify-items: center;
-  align-items: center;
-}
-.contact-form form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-}
-.contact-form form label {
-  margin: 15px;
+.icons-footer {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 20px;
-}
-.contact-form form input, .contact-form form select {
-  border: 1px solid red;
-  border-radius: 10px;
-  margin-left: 25px;
-  width: 100%;
-  font-size: 15px;
-}
-.contact-form form .select_option {
-  margin: 0px 10px;
-}
-.contact-form form form,
-.contact-form form p {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.contact-form form textarea {
-  border: 1px solid red;
-  border-radius: 10px;
-  margin-left: 15px;
-}
-.contact-form form form button {
-  color: white;
-  width: 30%;
-  text-transform: uppercase;
-  margin-top: 5%;
-}
-.contact-form form form button,
-.contact-form form form input,
-.contact-form form form textarea {
-  padding: 0.7em;
-  border: none;
 }
 
+/* Grid Practice in page Alquiler, Compra and Venta */
 .grid-section-ventas {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-items: center;
   align-items: center;
   gap: 50px;
-  margin: 50px 0;
 }
 
-.card:hover .rubberBand {
-  -webkit-animation-name: rubberBand;
-  animation-name: rubberBand;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-@-webkit-keyframes rubberBand {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
-  }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
-  }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1);
-  }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-@keyframes rubberBand {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
-  }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
-  }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1);
-  }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+.grid-home-options {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  align-items: center;
+  margin: 50px;
 }
 
+.carrusel {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive */
 @media (max-width: 992px) {
-  .grid-section-ventas {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-  .contact-form form {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media (max-width: 576px) {
-  .grid-section-ventas {
-    display: grid;
-    grid-template-columns: auto;
-  }
-  .gallery-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    font-size: 40px;
+  .navbar-toggler {
+    margin: 10px;
   }
 }
 
