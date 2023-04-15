@@ -13,26 +13,378 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img alt="logo" class="logo" src="../img/Logo AutoHome/logo.png"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active text-light fs-4" aria-current="page" href="./compra.html">Compra</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-light fs-4" aria-current="page" href="./venta.html">Venta</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-light fs-4" aria-current="page" href="./alquiler.html">Alquiler</a>
-              </li>
-            </ul>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img alt="logo" class="logo" src="../img/Logo AutoHome/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light fs-4" aria-current="page" href="./alquiler.html">Alquiler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light fs-4" aria-current="page" href="./venta.html">Venta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light fs-4" aria-current="page" href="./mantenimiento.html">Mantenimiento</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- section ventas -->
+    <div class="container text-center">
+      <div class="col">
+        <h1 class="w-auto m-5">Visitanos en nuestros Centros de Experiencia.</h1>
+        <hr>
+        <h4>La mejor inmobiliaria en todo el territorio nacional. Contamos con sedes en las principales ciudades del pais como lo son Cali, Medellin, Bogota, Cucuta, Bucaramanga, Manizales. Aparte de viviendas y apartamentos, dentro de nuestro portafolio tambien podras enocntrar locales  de mediana y grande superficie.</h4>
+        <p><a href="#" class="link-info">Contacta con nuestros aseores</a></p>
+      </div>
+      <!-- item ventas -->
+      <section class="d-flex m-5 pb-5 gap-5">
+        <div class="card" style="width: 18rem;">
+          <div class="animation rubberBand">
+            <img class="card-img-top" src="../img/galeria de aptos/house3.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-black">Venta $15.000 USD</h5>
+              <p class="card-text text-black">SLorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis tenetur voluptatibus.</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Agendar Cita
+              </button>
+              <!-- Modal form-->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Por Favor, diligencia los siguientes datos:</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                          <input type="text" required placeholder="Ingresa tu Nombre" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Telefono</label>
+                          <input type="number" required placeholder="Telefono" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Correo</label>
+                          <input type="email" required placeholder="Cual es tu email?" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Ciudad</label>
+                          <select class="select_option text-black" name="interested" id="interested">
+                            <option value="selected" selected>Medellin</option>
+                            <option value="Compra de Vivienda">Bogota</option>
+                            <option value="Alquiler de vivienda">Cali</option>
+                            <option value="Alquiler de habitacion">Cartagena</option>
+                            <option value="Compra de lote">Santa Marta</option>
+                            <option value="Compra de Automovil">Bucaramanga</option>
+                            <option value="Alquiler de Automovil">Barranquilla</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Dejanos tus inquietudes:</label>
+                          <textarea type="textarea" required placeholder="En que podriamos ayudarte?" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Acepto las politicas de privacidad</label>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="reset" class="btn btn-secondary">Limpiar Formulario</button>
+                      <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
-      </nav>
+        <div class="card" style="width: 18rem;">
+          <div class="animation rubberBand">
+            <img class="card-img-top" src="../img/galeria de aptos/house3.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-black">Venta $15.000 USD</h5>
+              <p class="card-text text-black">SLorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis tenetur voluptatibus.</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Agendar Cita
+              </button>
+              <!-- Modal form-->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Por Favor, diligencia los siguientes datos:</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                          <input type="text" required placeholder="Ingresa tu Nombre" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Telefono</label>
+                          <input type="number" required placeholder="Telefono" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Correo</label>
+                          <input type="email" required placeholder="Cual es tu email?" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Ciudad</label>
+                          <select class="select_option text-black" name="interested" id="interested">
+                            <option value="selected" selected>Medellin</option>
+                            <option value="Compra de Vivienda">Bogota</option>
+                            <option value="Alquiler de vivienda">Cali</option>
+                            <option value="Alquiler de habitacion">Cartagena</option>
+                            <option value="Compra de lote">Santa Marta</option>
+                            <option value="Compra de Automovil">Bucaramanga</option>
+                            <option value="Alquiler de Automovil">Barranquilla</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Dejanos tus inquietudes:</label>
+                          <textarea type="textarea" required placeholder="En que podriamos ayudarte?" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Acepto las politicas de privacidad</label>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="reset" class="btn btn-secondary">Limpiar Formulario</button>
+                      <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="animation rubberBand">
+            <img class="card-img-top" src="../img/galeria de aptos/house3.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-black">Venta $15.000 USD</h5>
+              <p class="card-text text-black">SLorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis tenetur voluptatibus.</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Agendar Cita
+              </button>
+              <!-- Modal form-->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Por Favor, diligencia los siguientes datos:</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                          <input type="text" required placeholder="Ingresa tu Nombre" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Telefono</label>
+                          <input type="number" required placeholder="Telefono" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Correo</label>
+                          <input type="email" required placeholder="Cual es tu email?" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Ciudad</label>
+                          <select class="select_option text-black" name="interested" id="interested">
+                            <option value="selected" selected>Medellin</option>
+                            <option value="Compra de Vivienda">Bogota</option>
+                            <option value="Alquiler de vivienda">Cali</option>
+                            <option value="Alquiler de habitacion">Cartagena</option>
+                            <option value="Compra de lote">Santa Marta</option>
+                            <option value="Compra de Automovil">Bucaramanga</option>
+                            <option value="Alquiler de Automovil">Barranquilla</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Dejanos tus inquietudes:</label>
+                          <textarea type="textarea" required placeholder="En que podriamos ayudarte?" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Acepto las politicas de privacidad</label>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="reset" class="btn btn-secondary">Limpiar Formulario</button>
+                      <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="animation rubberBand">
+            <img class="card-img-top" src="../img/galeria de aptos/house3.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-black">Venta $15.000 USD</h5>
+              <p class="card-text text-black">SLorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis tenetur voluptatibus.</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Agendar Cita
+              </button>
+              <!-- Modal form-->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Por Favor, diligencia los siguientes datos:</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                          <input type="text" required placeholder="Ingresa tu Nombre" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Telefono</label>
+                          <input type="number" required placeholder="Telefono" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Correo</label>
+                          <input type="email" required placeholder="Cual es tu email?" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Ciudad</label>
+                          <select class="select_option text-black" name="interested" id="interested">
+                            <option value="selected" selected>Medellin</option>
+                            <option value="Compra de Vivienda">Bogota</option>
+                            <option value="Alquiler de vivienda">Cali</option>
+                            <option value="Alquiler de habitacion">Cartagena</option>
+                            <option value="Compra de lote">Santa Marta</option>
+                            <option value="Compra de Automovil">Bucaramanga</option>
+                            <option value="Alquiler de Automovil">Barranquilla</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Dejanos tus inquietudes:</label>
+                          <textarea type="textarea" required placeholder="En que podriamos ayudarte?" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Acepto las politicas de privacidad</label>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="reset" class="btn btn-secondary">Limpiar Formulario</button>
+                      <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="animation rubberBand">
+            <img class="card-img-top" src="../img/galeria de aptos/house3.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-black">Venta $15.000 USD</h5>
+              <p class="card-text text-black">SLorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis tenetur voluptatibus.</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Agendar Cita
+              </button>
+              <!-- Modal form-->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Por Favor, diligencia los siguientes datos:</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                          <input type="text" required placeholder="Ingresa tu Nombre" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Telefono</label>
+                          <input type="number" required placeholder="Telefono" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Correo</label>
+                          <input type="email" required placeholder="Cual es tu email?" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Ciudad</label>
+                          <select class="select_option text-black" name="interested" id="interested">
+                            <option value="selected" selected>Medellin</option>
+                            <option value="Compra de Vivienda">Bogota</option>
+                            <option value="Alquiler de vivienda">Cali</option>
+                            <option value="Alquiler de habitacion">Cartagena</option>
+                            <option value="Compra de lote">Santa Marta</option>
+                            <option value="Compra de Automovil">Bucaramanga</option>
+                            <option value="Alquiler de Automovil">Barranquilla</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Dejanos tus inquietudes:</label>
+                          <textarea type="textarea" required placeholder="En que podriamos ayudarte?" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Acepto las politicas de privacidad</label>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="reset" class="btn btn-secondary">Limpiar Formulario</button>
+                      <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
     <footer class="footer">
         <nav class="navbar navbar-expand-lg">
             <div class="icons-footer">
